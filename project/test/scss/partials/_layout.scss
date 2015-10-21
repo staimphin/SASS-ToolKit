@@ -1,0 +1,53 @@
+﻿//_layout.scss
+/*===========================
+   レイアウト 設定
+  =========================*/
+
+div#body {
+	width:$width_MAX;
+	margin: 0px auto;
+	text-align: left;
+	_zoom: 1;
+	overflow: hidden;
+	background:url(../images/share/mn_bkg_001.png) no-repeat left top $color_BODYBG;
+	}
+
+div#header {
+	width: $width_MAX;
+	position: relative;
+	margin-bottom: 0px;
+	_zoom: 1;
+	/*overflow: hidden;*/
+	background:url(../images/share/hd_bkg_001.png) no-repeat left top;
+	}
+
+div#contents {
+	font-size: 14px;
+	margin-bottom: 30px;
+	width:  $width_MIN;
+	_zoom: 1;
+	overflow: hidden;
+	}
+
+div#main {
+	float: left;
+	width:  $width_MAIN;
+	}
+
+div#right {
+	float: right;
+	width:  $width_RIGHT;
+	}
+
+div#left {
+	float: left;
+	width:  $width_LEFT;
+	}
+
+div#footer {
+	width:  $width_MIN;
+	background: $color_FOOTERBG;
+	clear: both;
+	_zoom: 1;
+	overflow: hidden;
+	}

@@ -1,0 +1,37 @@
+﻿//_vars.scss
+
+/*===========================
+   フォント設定
+ =========================*/
+$font_LIST:	Meiryo, "Myriad Pro" ,"Hiragino Kaku Gothic Pro", sans-serif, Helvetica, Arial, raven; 
+
+/*===========================
+   フォントカラー設定
+ =========================*/
+$color_TXT: #FFF;
+$color_BODYBG: #CCC;
+$color_BG: #000;
+$color_MAINBG: #000;
+$color_FOOTERBG: #000;
+$color_LINK: #AABBDD;
+$color_ACTIVE: #754C24;
+$color_RED: #FF0000;
+
+/*===========================
+   フォントサイズ設定
+ =========================*/
+
+ $size_NULL: 0px;
+ $size_DEFAULT:12px;
+ $size_LARGE:18px;
+ $size_MIDLE:14px;
+ $size_SMALL:10px;
+
+ /*===========================
+  レイアウトサイズ設定
+ =========================*/
+ $width_MAX:1000px;
+ $width_MIN:900px;
+ $width_MAIN:650px;
+ $width_LEFT:210px;
+ $width_RIGHT:210px;

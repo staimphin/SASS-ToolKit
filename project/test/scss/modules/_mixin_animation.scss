@@ -1,0 +1,30 @@
+﻿//_mixin_animation.scss
+@mixin keyFrame($name) {
+	@-webkit-keyframes $name {
+		from {}to { }
+	}
+	@keyframes $name {
+		from {}to { }
+	}
+
+}
+
+@mixin animation($name) {
+	/* Chrome, Safari, Opera */
+	-webkit-animation-name: $name;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: 2s;
+	--webkit-transition: ease-in-out2s;
+	/* exception*/
+	-moz-transition:ease-in-out2s;
+
+	/* Standard syntax */
+	animation-name: $name;;
+	animation-duration:2s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	transition:ease-in-out2s;
+}

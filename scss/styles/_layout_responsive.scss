@@ -1,0 +1,164 @@
+﻿//_layout.scss
+/*===========================
+   レイアウト 設定
+  =========================*/
+  
+//Screen BreakPoints
+$BP_SMART: null;
+$BP_TABLET: 700px;
+$BP_PC: 1000px;
+
+$BREAKPOINT:(
+$BP_SMART: 230px,
+$BP_TABLET:650px,
+$BP_PC:980px
+);
+
+$DISPLAY_TABLET:(
+null: NONE,
+700px:INLINE-BLOCK,
+1000px:BLOCK
+);
+$DISPLAY_SMART:(
+null: NONE,
+700px:INLINE-BLOCK,
+1000px:BLOCK
+);
+$DISPLAY_PC:(
+null: NONE,
+700px:NONE,
+1000px:BLOCK
+);
+
+$SIZE_MAIN:(
+$BP_SMART: 100%,
+$BP_TABLET:500px,
+$BP_PC:$width_MAIN
+);
+
+
+  
+//media query mixin
+@mixin width-mquery($fs-map) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint == null {
+ width: $fs-font-size;
+		}
+		@else {
+@media screen and (min-width: $fs-breakpoint) {
+width: $fs-font-size;
+		  	}
+	  	}
+	}
+}
+
+@mixin display-mquery($fs-map) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint == null {
+display: $fs-font-size;
+		}
+		@else {
+@media screen and (min-width: $fs-breakpoint) {
+display: $fs-font-size;
+		  	}
+	  	}
+	}
+}
+
+body {
+	color: $color_TXT;
+	font: $size_DEFAULT $font_LIST;
+	word-break: break-all;
+	background:url(../images/share/bg_html.png) repeat-x left top $color_BG;
+	margin: responsive(0px) responsive(40px) ;
+	}
+	
+html {overflow: auto;}
+img { 
+		width: 100%;
+	}	
+	
+//	RESPONSIVE: BREAKPOINT;
+/*	layout Block SIZE */
+div#body , header,  footer{@include width-mquery($BREAKPOINT) ;}
+
+div#main {@include width-mquery($SIZE_MAIN) ;}
+div#contents {	width: responsive($width_MIN);}
+
+div#right {width: $width_RIGHT;}
+div#left {width: $width_LEFT;}
+/* LAYOUT Block DISPLAY */
+div#right {@include display-mquery($DISPLAY_SMART) ;}
+
+div#left {@include display-mquery($DISPLAY_PC) ;}
+
+
+
+
+//picture element
+
+.respblock {
+	display:block;
+	
+	.right & {
+		width: responsive($width_RIGHT);
+	}
+	
+	.left & {
+		width: responsive($width_LEFT);
+	}
+
+	.main &	{ 
+		width: responsive($width_MAIN);
+	}
+		.footer  &{ 
+		width: responsive(64px);
+	}
+
+	.list &	{ 
+		width: responsive($width_MIN);
+	}
+	
+
+}
+
+
+div#body {
+	margin: 0px auto;
+	text-align: center;
+	overflow: hidden;
+	background:url(../images/share/mn_bkg_001.png) no-repeat left top $color_BODYBG;
+	}
+
+header {
+	position: relative;
+	margin-bottom: 0px;
+	background:url(../images/share/hd_bkg_001.png) no-repeat left top;
+	}
+
+div#contents {
+	font-size: 14px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	}
+
+div#main {
+	display:inline-block;
+	background: $color_ACTIVE;
+	}
+
+div#right {
+	float: right;
+	}
+
+div#left {
+	float: left;
+	background: $color_ACTIVE;
+	}
+
+footer {
+	margin: 0px auto;
+	background: $color_FOOTERBG;
+	clear: both;
+	overflow: hidden;
+	}

@@ -1,0 +1,83 @@
+﻿//_usefull.scss
+/*===========================
+   共通クラス設定
+  =========================*/
+.tCenter {
+	text-align: center;
+	clear: both;
+	}
+
+.tRight {text-align: right;}
+.clear {clear: both;}
+.l {float: left;}
+.r {float: right;}
+.bordernone {border: none !important;}
+
+/*===========================
+   フォントカラー設定
+  =========================*/
+.red { color: $color_RED; }
+
+
+/*===========================
+   フォントサイズ設定
+  =========================*/
+.int { font: " ＭＳ Ｐゴシック" } //いるか
+.f18 { font-size: 18px!important; }
+.lg { font-size: $size_LARGE; font-weight: bold;}
+.mdl{ font-size: $size_MIDLE; }
+.sml{ font-size:  $size_SMALL; }
+
+/*===========================
+   マージン設定
+  =========================*/
+
+/* margin */
+.m0   { margin: 0px!important; }
+
+/* margin-top */
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt40 { margin-top: 40px !important; }
+.mt50 { margin-top: 50px !important; }
+
+/* margin-right */
+.mR10 { margin-right: 10px !important; }
+
+/* Irregular margin-right */
+.mr10 { margin-right: 10px !important; }
+.mr20 { margin-right: 20px !important; }
+.mr30 { margin-right: 30px !important; }
+.mr40 { margin-right: 40px !important; }
+.mr50 { margin-right: 50px !important; }
+
+/* margin-left */
+.ml10 { margin-left: 10px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml30 { margin-left: 30px !important; }
+.ml40 { margin-left: 40px !important; }
+.ml50 { margin-left: 50px !important; }
+
+/* margin-bottom */
+.mb0 { margin-bottom: 0px !important; }
+.mb5 { margin-bottom: 2px !important; }
+.mb10 { margin-bottom: 10px !important; }
+.mb15 { margin-bottom: 15px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb25 { margin-bottom: 25px !important; }
+.mb27 { margin-bottom: 27px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+.mb60 { margin-bottom: 60px !important; }
+
+/*===========================
+   幅 設定
+  =========================*/
+
+.w400 { width: 400px; }
+.w200 { width: 200px; }
+.w160 { width: 160px; }
+.w260 { width: 260px; }
+.w110 { width: 110px; }

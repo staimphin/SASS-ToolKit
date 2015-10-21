@@ -1,0 +1,109 @@
+﻿//_vars.scss
+
+//===========================
+// フォント設定
+//===========================
+$font_LIST:	Meiryo, "Myriad Pro" ,"Hiragino Kaku Gothic Pro", sans-serif, Helvetica, Arial, raven; 
+
+//===========================
+ //  フォントカラー設定
+// ===========================
+$color_TXT: #FFF;
+$color_BODYBG: #CCC;
+$color_BG: #ADB;
+$color_MAINBG: #AEF;
+$color_FOOTERBG: #BED;
+$color_LINK: #AABBDD;
+$color_ACTIVE: #754C24;
+$color_RED: #FF0000;
+
+//===========================
+ //  サイズ設定
+// ===========================
+$SCREEN:(
+IPHONE3G:320,
+IPHONE3GS:480,
+VGA:640,
+SMALL:680,
+SVGA:800,
+MEDIUM:900,
+IPHONE4S:960,
+XGA:1024,
+IPHONE5:1136,
+LARGE:1200,
+HD720:1280,
+FULLHD:1920,
+QXGA:2048,
+UHDTV:3840,
+4K:4096
+);
+
+
+$SIZE: (
+null : 0,
+DEFAULT: 12px,
+LARGE:18px,
+MIDLE:14px,
+SMALL:10px,
+SCREEN_MAX:1280px,
+SCREEN_BASE:980px,
+SCREEN_MIN:230px,
+MAX:980px,
+MIN:900px,
+MAIN:680px,
+LEFT:150px,
+RIGHT:150px
+);
+
+$SIZELISTE: (
+null : 0,
+DEFAULT: 12,
+LARGE:18,
+MIDLE:14,
+SMALL:10,
+SCREEN_MAX:1280,
+SCREEN_BASE:980,
+SCREEN_MIN:230,
+MAX:980,
+MIN:900,
+MAIN:680,
+LEFT:150,
+RIGHT:150
+);
+
+@function size($key)
+{
+	@return map-get($SIZE,$key);
+}
+
+@function liquid($key)
+{
+	$tmp : map-get($SIZELISTE,$key);
+	@return percentage($tmp)/100;
+}
+
+//===========================
+ //  フォント サイズ設定
+// ===========================
+
+ $size_NULL: size(NULL);
+ $size_DEFAULT:size(DEFAULT);
+ $size_LARGE:size(LARGE);
+ $size_MIDLE:size(MIDLE);
+ $size_SMALL:size(SMALL);
+
+ //===========================
+ // レイアウト サイズ設定
+// ===========================
+ $SCREEN_MAX:size(SCREEN_MAX);
+ $SCREEN_MIN:size(SCREEN_MIN);
+ $SCREEN_BASE:size(SCREEN_BASE);
+//===========================
+ // SECTION サイズ設定
+// ===========================
+ $width_MAX:size(MAX);
+ $width_MIN:size(MIN);
+ $width_MAIN:size(MAIN);
+ $width_LEFT:size(LEFT);
+ $width_RIGHT:size(RIGHT);
+ 

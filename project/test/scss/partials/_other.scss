@@ -1,0 +1,41 @@
+﻿/*===========================
+   facebook button 設定
+  =========================*/
+.fb-like *{
+	overflow: visible!important;
+}
+
+.fb-like {
+	margin-bottom:15px;
+	overflow: visible!important;
+	}
+	
+/* footer */
+div#footer a {
+	color: #ffffff;
+	}
+
+div#footer a:hover {
+	color: #754C24;
+	text-decoration: underline;
+	}
+
+/*===========================
+   共通クラス設定
+  =========================*/
+
+
+
+.pageTop {
+	margin: 40px 0px;
+	text-align: right;
+	clear: both;
+	zoom: 1;
+    overflow: hidden;
+	}
+
+
+.notes {
+	color: #959595;
+	font-size: 13px;
+	}

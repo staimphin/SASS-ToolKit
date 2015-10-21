@@ -1,0 +1,35 @@
+﻿//_footer.scss
+/*===========================
+   footer 設定
+  =========================*/
+
+div.footerBody {
+	color: #000;
+	margin: 35px auto;
+	width: 892px;
+	_zoom: 1;
+	overflow: hidden;
+	}
+
+#footer p.footerLogo {
+	margin-right: 50px;
+	float: left;
+	}
+
+#footer ul {
+	width: 450px;
+	float: left;
+	}
+
+#footer ul li {
+	float: left;
+    margin: 0px 20px 20px 0px;
+	}
+
+#footer p.footerTel {
+	float: right;
+	}
+
+p.footerCopyright {
+	float: right;
+	}

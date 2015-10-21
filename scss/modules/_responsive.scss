@@ -1,0 +1,32 @@
+//_responsive.scss
+/*
+Responsive tools and settings
+*/
+// MAP
+$p-font-sizes: (
+  null  : 15px,
+  480px : 16px,
+  640px : 17px,
+  1024px: 19px
+);
+
+/*
+// mixin
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+*/
+// function
+/* Return the % for the entered px size*/
+@function responsive($size){
+	@return ((($size /size(SCREEN_BASE)) *100% ));
+}

@@ -1,0 +1,64 @@
+﻿//_header.scss
+
+
+/*===========================
+   header - snavi 設定
+  =========================*/
+
+/* info */
+ul#navi {
+	width: 400px;
+	margin: 14px 0px 0px 20px;
+	clear: both;
+	_zoom: 1;
+	overflow: hidden;
+	background:#f2f2f2;
+	}
+
+ul#navi li {
+margin: 0px;
+padding: 0px;
+	color: #6c6c6c;
+	font-size: 11px;
+
+	width: 123px;
+	margin-bottom: 10px;
+	vertical-align: top;
+	display: inline-block;
+	}
+
+ul#navi li a {
+	color: #6c6c6c;
+	text-decoration: none;
+	}
+ul#navi li a:hover {
+	text-decoration: underline;
+	}
+
+/*===========================
+   header - gnavi 設定
+  =========================*/
+
+/* info */
+header ul#gnavi {
+	width: 616px;
+	position: absolute;
+	right:0px;
+	top: 65px;
+	margin-bottom: 10px;
+	clear: both;
+	_zoom: 1;
+	overflow: hidden;
+	}
+
+header ul#gnavi li {
+	float: left;
+	display: block;
+	height: 46px;
+	}
+
+header ul#gnavi li a {
+	display: block;
+	height: 46px;
+	text-indent: -9000px;
+	}

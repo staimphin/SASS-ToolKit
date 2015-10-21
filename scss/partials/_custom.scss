@@ -1,0 +1,12 @@
+﻿//_custom.scss
+/*
+新しい　クラス
+*/
+.test{
+	width:  responsive(300px);
+	display:block;
+	img {	
+	width:  responsive($SCREEN_BASE);
+	}
+	
+}

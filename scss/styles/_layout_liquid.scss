@@ -1,0 +1,102 @@
+﻿//_layout.scss
+/*===========================
+   レイアウト 設定
+  =========================*/
+//debug purpose
+
+body {
+	color: $color_TXT;
+	font: $size_DEFAULT $font_LIST;
+	word-break: break-all;
+	background:url(../images/share/bg_html.png) repeat-x left top $color_BG;
+	margin: responsive(0px) responsive(40px) ;
+	}
+	
+html {overflow: auto;}
+img { 
+		width: 100%;
+	}	
+	
+//LIQUID: section Can shrink to minimum size
+
+div#body , header,  footer{
+	width: responsive($SCREEN_BASE);
+	min-width: $SCREEN_MIN;
+}
+
+//picture element
+
+.respblock {
+	display:block;
+	
+	.right & {
+		width: responsive($width_RIGHT);
+	}
+	
+	.left & {
+		width: responsive($width_LEFT);
+	}
+
+	.main &	{ 
+		width: responsive($width_MAIN);
+	}
+		.footer  &{ 
+		width: responsive(64px);
+	}
+
+	.list &	{ 
+		width: responsive($width_MIN);
+	}
+	
+
+}
+
+
+
+
+div#body {
+	margin: 0px auto;
+	text-align: left;
+	overflow: hidden;
+	background:url(../images/share/mn_bkg_001.png) no-repeat left top $color_BODYBG;
+	}
+
+header {
+	position: relative;
+	margin-bottom: 0px;
+	_zoom: 1;
+	background:url(../images/share/hd_bkg_001.png) no-repeat left top;
+	}
+
+div#contents {
+	font-size: 14px;
+	margin-bottom: 30px;
+	width: responsive($width_MIN);
+	overflow: hidden;
+	}
+
+div#main {
+	width:  responsive($width_MAIN);
+	display:inline-block;
+	background: $color_ACTIVE;
+	}
+
+div#right {
+	float: right;
+	width:  responsive($width_RIGHT);
+	display:inline-block;
+	}
+
+div#left {
+	float: left;
+	width:  responsive($width_LEFT);
+	display:inline-block;
+	background: $color_ACTIVE;
+	}
+
+footer {
+	margin: 0px auto;
+	background: $color_FOOTERBG;
+	clear: both;
+	overflow: hidden;
+	}

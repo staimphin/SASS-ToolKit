@@ -1,0 +1,75 @@
+﻿//_mixin.scss
+@mixin border-radius($radius) {
+	-webkit-border-radius:	$radius;
+	-moz-border-radius:	$radius;
+	-ms-border-radius:		$radius;
+	border-radius:			$radius;
+}
+
+@mixin flexbox($orient , $content, $align){
+	/* Older Browser Compatibility */
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;  
+	display: flex;
+}
+
+@mixin flexbox-orient($orient){	
+	-webkit-box-orient:	$orient;
+	-moz-box-orient:	$orient;
+	flex-direction: 		$orient;
+}
+
+@mixin flexbox-content($content){	
+	-webkit-box-pack: 	$content;
+	-moz-box-pack: 	$content;	
+	justify-content: 	$content;
+}
+
+@mixin flexbox-align($align){	
+	-webkit-box-align: 	$align;
+	-moz-box-align: 	$align; 
+	align-items: 		$align;
+}	
+
+@mixin box-shadow($options){
+	box-shadow:			$options;
+	-moz-box-shadow:		$options;
+	-webkit-box-shadow:	$options;
+}
+
+@mixin box-sizing($options){
+	-webkit-box-sizing: $options; /* Chrome, Safari */
+	-moz-box-sizing: $options;   /* Firefox */
+	box-sizing: $options;        /* IE8+, Opera */
+}
+
+@mixin bg-image-linear-gradient($color1, $color2){
+	background-image: -webkit-linear-gradient(top,$color1 0%,$color2 100%);
+	background-image: linear-gradient(to bottom,$color1 0%,$color2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#$color1', endColorstr='#ffe0e0e0', GradientType=0);/* MSIE ONLY */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);/* MSIE ONLY */
+}
+@mixin bg-linear-gradient($color1, $color2){
+	background: linear-gradient(to bottom,  $color1 0%,$color2 100%);
+	background: -moz-linear-gradient(top,  $color1 0%,$color2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2));
+	background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%);
+	background: -o-linear-gradient(top,  $color1 0%,$color2 100%);
+	background: -ms-linear-gradient(top,  $color1 0%,$color2 100%);
+}
+
+
+@mixin box-sizing($options){
+	-webkit-user-select: 	$options;
+	-moz-user-select: 		$options;
+	-ms-user-select: 		$options;
+}
+
+@mixin transition($time){
+-moz-transition: all $time;
+	-webkit-transition: all$time;
+	-o-transition: all$time;
+	-ms-transition: all$time;
+	transition: all$time;
+}
